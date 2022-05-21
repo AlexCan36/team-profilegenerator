@@ -18,6 +18,15 @@ describe('Employee id', () => {
     });
 });
 
+describe('Employee email', () => {
+    it('can set id value thru constructor', () => {
+        const email = 'alex@gmail.com';
+        const e = new Employee("Alex" , "1", email)
+
+        expect(e.email).toEqual(email);
+    });
+});
+
 describe('Employee getName', () => {
     it('can set id value thru constructor', () => {
         const name = 'Alex';
